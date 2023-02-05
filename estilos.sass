@@ -1,0 +1,67 @@
+
+body
+  background: #183b50
+  margin: 50px
+
+.contenedor
+  margin: 50px auto
+  display: flex
+  width: 90%
+  flex-flow: row wrap
+  justify-content: center
+  gap: 5%
+  align-items: baseline
+
+span
+  color: #fff
+
+input
+  width: 60px
+  padding: 12px 15px
+  border: 4px solid #183b50
+  border-radius: 6px
+  margin-bottom: 15px
+  &:focus
+    outline: none
+    border: 4px solid #092229
+
+button
+  border: 0
+  width: 120px
+  font-family: sans-serif
+  text-transform: capitalize
+  transform: translateX(2px)
+  transform: translatey(2px)
+  background: #b9d8ff
+  padding: 12px 22px
+  border-radius: 3px
+  transition: background .2s
+  margin-bottom: 15px
+  outline: none
+  &:hover
+    cursor: pointer
+    background: #a3c3eb
+
+.contenido
+  overflow: auto
+  background: #052a35
+  display: flex
+  align-content: center
+  flex-direction: column
+  width: 80%
+  margin: 0 auto
+  border-radius: 5px
+  color: #fff
+  padding: 20px
+
+.mensaje
+  display: inline
+  background: #183b50
+  border-radius: 4px
+  padding: 10px 15px
+  color: #fff
+  margin-bottom: 15px
+
+@media screen and(max-width: 570px)
+  .contenedor
+    justify-content: flex-start
