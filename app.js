@@ -11,8 +11,8 @@ function sumar() {
 	let puntuacion = 0;
 	puntosSuma.textContent = puntuacion;
 
-	input1.value = Math.floor(Math.random() * 100);
-	input2.value = Math.floor(Math.random() * 50);
+	input1.value = Math.floor(Math.random() * 500);
+	input2.value = Math.floor(Math.random() * 500);
 
 	btn.addEventListener('click', function () {
 		let numero1 = parseInt(input1.value);
@@ -24,8 +24,8 @@ function sumar() {
 			span.innerText = 'Resultado Correcto';
 			span.classList = 'mensaje';
 			contenido.append(span);
-			input1.value = Math.floor(Math.random() * 100);
-			input2.value = Math.floor(Math.random() * 50);
+			input1.value = Math.floor(Math.random() * 500);
+			input2.value = Math.floor(Math.random() * 500);
 			puntosSuma.textContent = ++puntuacion;
 			resultado.value = '';
 			resultado.focus();
@@ -39,8 +39,8 @@ function sumar() {
 			contenido.append(span);
 			puntuacion = 0;
 			puntosSuma.textContent = puntuacion;
-			input1.value = Math.floor(Math.random() * 100);
-			input2.value = Math.floor(Math.random() * 50);
+			input1.value = Math.floor(Math.random() * 500);
+			input2.value = Math.floor(Math.random() * 500);
 			resultado.value = '';
 			resultado.focus();
 			setTimeout(() => {
@@ -61,7 +61,7 @@ function restar() {
 	puntosResta.textContent = puntuacion;
 
 	input1Resta.value = Math.floor(Math.random() * 500);
-	input2Resta.value = Math.floor(Math.random() * 50);
+	input2Resta.value = Math.floor(Math.random() * 100);
 
 	btnResta.addEventListener('click', function () {
 		let numero1 = parseInt(input1Resta.value);
@@ -74,7 +74,7 @@ function restar() {
 			span.classList = 'mensaje';
 			contenido.append(span);
 			input1Resta.value = Math.floor(Math.random() * 500);
-			input2Resta.value = Math.floor(Math.random() * 50);
+			input2Resta.value = Math.floor(Math.random() * 100);
 			puntosResta.textContent = ++puntuacion;
 			resultadoResta.value = '';
 			resultadoResta.focus();
@@ -89,7 +89,7 @@ function restar() {
 			puntuacion = 0;
 			puntosResta.textContent = puntuacion;
 			input1Resta.value = Math.floor(Math.random() * 500);
-			input2Resta.value = Math.floor(Math.random() * 50);
+			input2Resta.value = Math.floor(Math.random() * 100);
 			resultadoResta.value = '';
 			resultadoResta.focus();
 			setTimeout(() => {
